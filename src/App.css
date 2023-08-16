@@ -269,4 +269,17 @@
   .about--card-content{
     font-size: 1rem;
   }
+  .Skills--card{
+    margin: 0;
+    
+  }
+  .Skills--card-category{
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-row-gap: 1rem;
+  }
+  .Skills--card-content{
+    grid-template-columns: auto;
+  }
 }
