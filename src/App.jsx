@@ -3,6 +3,7 @@ import "boxicons"
 import { useState } from 'react'
 import Skills from './components/Skills'
 import gif from "./assets/giphy.gif"
+import Projects from './components/Projects'
 function App() {
   const [menuOpen, setMenuOpen] = useState(false)
   return (
@@ -25,7 +26,7 @@ function App() {
         </div>
         <div className='section--unselected'>
           <h4 >
-            Works
+            Projects
           </h4>
         </div>
         <div className='section--unselected'>
@@ -77,7 +78,12 @@ function App() {
           <Skills />
         </div>
       </div>
+      <div className='Projects' id="projetcs">
+        <p className='Projects--head'>Projects</p>
+        <Projects />
+      </div>
     </div>
+    
   )
 }
 

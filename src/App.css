@@ -9,6 +9,7 @@
 .Home {
 
   height: 100vh;
+  margin-top: 15rem;
 }
 
 .navbar {
@@ -117,7 +118,7 @@
   color: rgb(255, 143, 82);
   font-size: 3rem;
   text-align: center;
-  margin-top: 5rem;
+  margin-top: 10rem;
 }
 .Skills--card{
   background-color: rgba(255, 255, 255, 0.548);
@@ -192,6 +193,98 @@
   background-size: cover;
   
   height: 100%;
+}
+
+
+.Projects{
+  height: 100vh;
+}
+
+.Projects--head{
+  font-family: 'Tilt Prism', cursive;
+  color: rgb(255, 143, 82);
+  font-size: 3rem;
+  text-align: center;
+}
+
+@keyframes blink {
+  0%{
+    box-shadow:0 0 0px 0px #48abe0;
+  }
+  100%{
+    box-shadow:0 0 25px 5px #48abe0;
+  }
+  
+}
+
+.Projects--data-card{
+  width: 20rem;
+  background-color: rgba(255, 255, 255, 0.548);
+  /* background-color: #1F2124; */
+  transition: all 0.5s;
+  height: 25rem;
+  /* animation: 1s infinite alternate blink; */
+}
+.Projects--data{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  justify-content: space-evenly;
+}
+.Projects--data-card-head{
+  backdrop-filter: blur(5px);
+}
+.Projects--data-card-head > p{
+  /* color: rgb(255, 174, 0); */
+  padding: 0.25rem;
+  color: #101931;
+  font-weight: bold;
+  font-size: 4rem;
+  width: fit-content;
+  font-family: 'Handjet', cursive;
+  background-color:  rgba(255, 255, 255, 0.548);
+  margin: 4rem 1rem 3rem 1rem;
+  
+}
+.Projects--data-card > img {
+  width: 20rem;
+  height: 10rem;
+  animation: 0.25s ease-out 0s 1 slideInLeft;
+}
+.Projects--data-card-info{
+  display: none;
+  margin-top: -2rem;
+  height: 10rem;
+  padding: 0 1rem 0 1rem;
+  animation: 0.25s ease-out 0s 1 slideInLeft;
+
+}
+.Projects--data-card-link{
+  margin-left: 1rem;
+}
+.Projects--data-card:hover  .Projects--data-card-info{
+  display: block;
+}
+.Projects--data-card:hover .Projects--data-card-head{
+  color: #000c24 !important;
+  background-color: transparent !important;
+}
+.Projects--data-card:hover{
+  background-image: none !important;
+  animation:  none;
+  box-shadow: 
+  inset 0 0 40px #fff,      
+  inset 20px 0 60px #f0f,   
+  inset -20px 0 60px #0ff,  
+  inset 20px 0 200px #f0f,  
+  inset -20px 0 200px #0ff, 
+  0 0 40px #fff,            
+  -10px 0 60px #f0f,        
+  10px 0 60px #0ff;         
+  background-color: rgba(255, 255, 255, 0.548);
+
+}
+.Projects--data-card:hover .Projects--data-card-img{
+  display: none;
 }
 
 @media (max-width: 420px) {
