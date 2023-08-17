@@ -8,33 +8,35 @@ function App() {
   const [menuOpen, setMenuOpen] = useState(false)
   return (
     <div className="main" >
-      <nav className='navbar'>
-        <div className='section--selected'>
-          <h4 >
-            Home
-          </h4>
-        </div>
-        <div className='seciton--unselected'>
-          <h4 >
-            About
-          </h4>
-        </div>
-        <div className='section--unselected'>
-          <h4 >
-            Skills
-          </h4>
-        </div>
-        <div className='section--unselected'>
-          <h4 >
-            Projects
-          </h4>
-        </div>
-        <div className='section--unselected'>
-          <h4 >
-            Contacts
-          </h4>
-        </div>
-      </nav>
+      <div className='nav--holder'>
+        <nav className='navbar'>
+          <div className='section--selected'>
+            <h4 >
+              Home
+            </h4>
+          </div>
+          <div className='seciton--unselected'>
+            <h4 >
+              About
+            </h4>
+          </div>
+          <div className='section--unselected'>
+            <h4 >
+              Skills
+            </h4>
+          </div>
+          <div className='section--unselected'>
+            <h4 >
+              Projects
+            </h4>
+          </div>
+          <div className='section--unselected'>
+            <h4 >
+              Contacts
+            </h4>
+          </div>
+        </nav>
+      </div>
       <div id="home" className='Home'>
 
         <nav className='navbar--mobile' onClick={() => setMenuOpen(prev => !prev)}>
