@@ -2,6 +2,7 @@ import codeEditor from "../assets/Run.gif"
 import quoteMachine from "../assets/172864442-9b269f24-9279-48a7-89cd-d9a9c106714b.gif"
 import eventDark from "../assets/258420444-bfc76ca9-8444-42f4-92b6-836007aa353c.png"
 import imageUploader from "../assets/imageUploader.png"
+import chatit from "../assets/chatit.gif"
 export default function Projects() {
     return (
         <div className='Projects--data'>
@@ -22,6 +23,9 @@ export default function Projects() {
                         <a href="https://github.com/divu050704/Code-editor" target="next">
                             <box-icon name='github' type='logo' color='#000c24' animation="tada-hover" size="md"></box-icon>
                         </a> &emsp;
+                        <a href="https://random-quote-machine.divu050704.repl.co/" target="next">
+                            <box-icon name='link-external' color='#000c24' animation="tada-hover" size="md"></box-icon>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -39,6 +43,9 @@ export default function Projects() {
                         <a href="https://github.com/divu050704/Random-Quote-Machine" target="next">
                             <box-icon name='github' type='logo' color='#000c24' animation="tada-hover" size="md"></box-icon>
                         </a> &emsp;
+                        <a href="https://e77psv.csb.app/" target="next">
+                            <box-icon name='link-external' color='#000c24' animation="tada-hover" size="md"></box-icon>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -59,10 +66,11 @@ export default function Projects() {
                         <a href="https://github.com/divu050704/eventDark" target="next">
                             <box-icon name='github' type='logo' color='#000c24' animation="tada-hover" size="md"></box-icon>
                         </a> &emsp;
+                        
                     </div>
                 </div>
             </div>
-            <div className='Projects--data-card' style={{ backgroundImage: `url(${imageUploader})`, backgroundSize: "cover" ,marginRight: "0"}}>
+            <div className='Projects--data-card' style={{ backgroundImage: `url(${imageUploader})`, backgroundSize: "cover" }}>
                 <div className='Projects--data-card-head' >
                     <p className='Projects--data-card-head' style={{ fontSize: "3rem" }}>Image Uploader</p>
                 </div>
@@ -81,6 +89,34 @@ export default function Projects() {
                         <a href="https://github.com/divu050704/ImageUploader" target="next">
                             <box-icon name='github' type='logo' color='#000c24' animation="tada-hover" size="md"></box-icon>
                         </a> &emsp;
+                        <a href="https://divyanshu-frontend-dobby.divu050704.repl.co/" target="next">
+                            <box-icon name='link-external' color='#000c24' animation="tada-hover" size="md"></box-icon>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div className='Projects--data-card' style={{ backgroundImage: `url(${chatit})`, backgroundSize: "cover" ,marginRight: "0"}}>
+                <div className='Projects--data-card-head' >
+                    <p className='Projects--data-card-head' style={{ fontSize: "3rem" }}>Chatit</p>
+                </div>
+                <div className='Projects--data-card-info'>
+                <div style={{display: "flex"}}>
+                    <box-icon type='logo' name='react'></box-icon>
+                    <box-icon name='nodejs' type='logo' ></box-icon>
+                    <box-icon name='mongodb' type='logo' ></box-icon>
+
+                </div>
+                    <p>
+                    Elevate conversations with 'Chatit,' a dynamic messaging app crafted using the MERN Stack, enabling seamless communication and real-time connections.                   </p>
+                    <div className='Projects--data-card-link'>
+
+                        <a href="https://github.com/divu050704/Chatit" target="next">
+                            <box-icon name='github' type='logo' color='#000c24' animation="tada-hover" size="md"></box-icon>
+                            
+                        </a> &emsp;
+                        <a href="https://chatit.divu050704.repl.co/" target="next">
+                            <box-icon name='link-external' color='#000c24' animation="tada-hover" size="md"></box-icon>
+                        </a>
                     </div>
                 </div>
             </div>

@@ -1,20 +1,30 @@
 @import url('https://fonts.googleapis.com/css2?family=Handjet&family=Roboto&family=Tilt+Prism&display=swap');
 
 .main {
-  background-image: linear-gradient(to right, #000c24, #08142a, #101931, #171f38, #1f243f, #262945, #2e2e4b, #353351, #3d3958, #463e60, #4e4467, #574a6e);
+  /* background-image: linear-gradient(to right, #000c24, #08142a, #101931, #171f38, #1f243f, #262945, #2e2e4b, #353351, #3d3958, #463e60, #4e4467, #574a6e); */
+  background-image: url('assets\bg_38.jpeg');
+  height: 100vh;
   background-size: cover;
   width: auto;
+  position: absolute;
+  overflow-y: scroll;
+  /* padding-top: -20rem; */
+}
+.glass{
+  background-color: rgba(255, 255, 255, 0) ;
+  backdrop-filter: blur(10px);
+  margin-top: -10rem;
+  
 }
 
 .Home {
-
   height: 100vh;
-
+  
 }
 
 .nav--holder{
   width: 100%;
-  background-image: linear-gradient(to right, #000c24, #08142a, #101931, #171f38, #1f243f, #262945, #2e2e4b, #353351, #3d3958, #463e60, #4e4467, #574a6e);
+  /* background-image: linear-gradient(to right, #000c24, #08142a, #101931, #171f38, #1f243f, #262945, #2e2e4b, #353351, #3d3958, #463e60, #4e4467, #574a6e); */
   position: fixed;
   top: 0;
 }
@@ -66,7 +76,7 @@
 }
 
 .About {
-  background-image: linear-gradient(to right, #000c24, #08142a, #101931, #171f38, #1f243f, #262945, #2e2e4b, #353351, #3d3958, #463e60, #4e4467, #574a6e);
+  /* background-image: linear-gradient(to right, #000c24, #08142a, #101931, #171f38, #1f243f, #262945, #2e2e4b, #353351, #3d3958, #463e60, #4e4467, #574a6e); */
   background-size: contain;
   width: auto;
   height: 100vh;
@@ -194,7 +204,7 @@
 
 
 .Projects{
-  height: 100vh;
+  height: 150vh;
   
 }
 
@@ -261,7 +271,7 @@
 }
 .Projects--data-card-info{
   display: none;
-  margin-top: -2rem;
+  
   height: 10rem;
   padding: 0 1rem 0 1rem;
   animation: 0.25s ease-out 0s 1 slideInLeft;
