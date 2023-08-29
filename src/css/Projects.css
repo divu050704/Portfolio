@@ -1,0 +1,201 @@
+.Projects {
+    height: 100vh;
+
+}
+
+.Projects--head {
+    font-family: 'Tilt Prism', cursive;
+    color: rgb(255, 143, 82);
+    font-size: 3rem;
+    text-align: center;
+    padding-top: 10rem;
+}
+
+@keyframes blink {
+    0% {
+        transform: translateY(0rem) rotate3d(1, 1, 0, -45deg);
+    }
+
+    100% {
+        transform: translateY(1rem) rotate3d(1, 1, 0, -45deg);
+    }
+
+}
+
+.Projects--data-card {
+    width: 20rem;
+    background-color: rgba(255, 255, 255, 0.548);
+    transition: all 0.5s;
+    height: 25rem;
+    animation: 1s infinite alternate blink;
+    width: 20rem;
+
+    margin-right: -10rem;
+    box-shadow: 5px 10px 18px #333333;
+}
+
+.Projects--data {
+    display: flex;
+    justify-content: center;
+    row-gap: 2rem;
+}
+
+.Projects--data-card-head {
+    backdrop-filter: blur(5px);
+    height: 98%;
+    margin: 0;
+    width: 100%;
+
+}
+
+.Projects--data-card-head>p {
+    padding: 1rem 0 0 1rem;
+    width: calc(100% - 1rem);
+    height: calc(100%-1rem);
+    color: #101931;
+    font-weight: bold;
+    font-size: 4rem;
+    font-family: 'Handjet', cursive;
+    background-color: rgba(255, 255, 255, 0.548);
+    /* margin: 4rem 1rem 3rem 1rem; */
+
+}
+
+.Projects--data-card>img {
+    width: 20rem;
+    height: 10rem;
+    animation: 0.25s ease-out 0s 1 slideInLeft;
+}
+
+.Projects--data-card-info {
+    display: none;
+
+    height: 10rem;
+    padding: 0 1rem 0 1rem;
+    animation: 0.25s ease-out 0s 1 slideInLeft;
+
+}
+
+.Projects--data-card-link {
+    margin-left: 1rem;
+}
+
+.Projects--data-card:hover .Projects--data-card-info {
+    display: block;
+}
+
+.Projects--data-card:hover .Projects--data-card-head {
+    color: #000c24 !important;
+    background-color: transparent !important;
+    height: fit-content;
+}
+
+.Projects--data-card:hover {
+    transform: rotate3d(0, 0, 0, 0deg) !important;
+    z-index: 1;
+    margin: 0 2rem 0 3rem;
+    background-image: none !important;
+    animation: none;
+    box-shadow:
+        inset 0 0 40px #fff,
+        inset 20px 0 60px #f0f,
+        inset -20px 0 60px #0ff,
+        inset 20px 0 200px #f0f,
+        inset -20px 0 200px #0ff,
+        0 0 40px #fff,
+        -10px 0 60px #f0f,
+        10px 0 60px #0ff;
+    background-color: rgba(255, 255, 255, 0.548);
+
+}
+
+.Projects--data-card:hover .Projects--data-card-img {
+    display: none;
+}
+
+@media (max-width: 420px) {
+    .Projects {
+        height: 300vh;
+
+    }
+
+    .Projects--data {
+        display: grid;
+    }
+
+    .Projects--data-card {
+        width: 20rem;
+        background-color: rgba(255, 255, 255, 0.548);
+        transition: none;
+        height: 25rem;
+        animation: none;
+        width: 20rem;
+        box-shadow:
+            inset 0 0 40px #fff,
+            inset 20px 0 60px #f0f,
+            inset -20px 0 60px #0ff,
+            inset 20px 0 200px #f0f,
+            inset -20px 0 200px #0ff,
+            0 0 40px #fff,
+            -10px 0 60px #f0f,
+            10px 0 60px #0ff;
+        margin-right: 0rem;
+        background-image: none !important;
+
+    }
+
+    .Projects--data-card:hover {
+        width: 20rem;
+        background-color: rgba(255, 255, 255, 0.548);
+        transition: none;
+        height: 25rem;
+        animation: none;
+        width: 20rem;
+        box-shadow:
+            inset 0 0 40px #fff,
+            inset 20px 0 60px #f0f,
+            inset -20px 0 60px #0ff,
+            inset 20px 0 200px #f0f,
+            inset -20px 0 200px #0ff,
+            0 0 40px #fff,
+            -10px 0 60px #f0f,
+            10px 0 60px #0ff;
+        margin-right: 0;
+        background-image: none !important;
+        
+       
+    
+    }
+    .Projects--data-card-head{
+        height: fit-content;
+        background-color: none;
+        backdrop-filter: none;
+    }
+    .Projects--data-card-head>p{
+        color: #000c24;
+        background-color: transparent !important;
+    }
+    .Projects--data-card-info {
+        display: block;
+    
+        height: 10rem;
+        padding: 0 1rem 0 1rem;
+        animation: 0.25s ease-out 0s 1 slideInLeft;
+    
+    }
+    .Projects--data-card:hover .Projects--data-card-info {
+        display: inherit;
+    }
+    
+    .Projects--data-card:hover .Projects--data-card-head {
+        height: fit-content;
+        background-color: none;
+        backdrop-filter: none;
+    }
+    
+    
+    
+    .Projects--data-card:hover .Projects--data-card-img {
+        display: inherit;
+    }
+}

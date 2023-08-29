@@ -4,6 +4,7 @@ import { useState } from 'react'
 import Skills from './components/Skills'
 import gif from "./assets/giphy.gif"
 import Projects from './components/Projects'
+import Achievments from './components/Achievments'
 function App() {
   const [menuOpen, setMenuOpen] = useState(false)
   return (
@@ -81,6 +82,10 @@ function App() {
         <div className='Projects' id="projetcs">
           <p className='Projects--head'>Projects</p>
           <Projects />
+        </div>
+        <div className='Projects' id="projetcs">
+          <p className='Projects--head'>Achievments</p>
+          <Achievments />
         </div>
       </div>
     </div>

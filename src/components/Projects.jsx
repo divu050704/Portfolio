@@ -3,6 +3,7 @@ import quoteMachine from "../assets/172864442-9b269f24-9279-48a7-89cd-d9a9c10671
 import eventDark from "../assets/258420444-bfc76ca9-8444-42f4-92b6-836007aa353c.png"
 import imageUploader from "../assets/imageUploader.png"
 import chatit from "../assets/chatit.gif"
+import "../css/Projects.css"
 export default function Projects() {
     return (
         <div className='Projects--data'>
