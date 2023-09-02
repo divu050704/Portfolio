@@ -12,7 +12,6 @@
 .glass {
   background-color: rgba(255, 255, 255, 0);
   backdrop-filter: blur(5px);
-
 }
 
 .Home {
@@ -22,8 +21,10 @@
 
 .nav--holder {
   width: 100%;
-  position: fixed;
+  position: sticky;
   top: 0;
+  background-color: #2E3440;
+  z-index: 2;
 }
 
 .navbar {
@@ -33,14 +34,22 @@
   color: #F5F9FF;
   align-items: center;
   width: 60%;
-  position: fixed;
-  top: 0;
   margin-top: -4rem;
 
 }
 
 .navbar--mobile {
   display: none;
+}
+
+@keyframes show {
+  0% {
+    transform: scale(0);
+  }
+
+  100% {
+    transform: scale(1);
+  }
 }
 
 .section--selected {
@@ -51,6 +60,19 @@
   background-size: cover;
   width: 5.7rem;
   padding: 0.5rem 0 0.5rem 0;
+  animation: 0.1s ease-in-out 0s 1 show;
+
+}
+
+.section-unselected {
+  transition: all 0.1s;
+  cursor: pointer;
+  color: white;
+
+}
+
+.section-unselected:focus {
+  animation: 0.1 ease-in-out 0s 1 show;
 }
 
 .name {
@@ -245,27 +267,40 @@
 
   .navbar--mobile {
     display: block;
-    padding: 1rem 0 0 1rem;
+    width:100%;
+    background-color: #2E3440;
+    margin: none;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    margin-bottom: -3rem;
   }
 
   .navbar--mobile-data {
+    margin: 0;
+    position: absolute;
     text-align: center;
-
+    height: 90vh;
+    background-color: #2E3440;
+    width: 10rem;
   }
 
   .navbar--mobile-data>li {
     list-style-type: none;
     margin-left: -2rem;
-    line-height: 2rem;
+    line-height: 8rem;
+    
   }
-
+  
   .navbar--mobile-selected {
-    color: #F44336;
+    text-decoration: none;
+    color: #F44336 ;
     font-size: 1.25rem;
 
   }
 
   .navbar--mobile-unselected {
+    text-decoration: none;
     color: #F5F9FF;
     font-size: 1.25rem;
   }
@@ -276,7 +311,7 @@
     justify-content: center;
   }
 
-  
+
   .gif>img {
     width: 20rem;
   }
@@ -312,5 +347,5 @@
     grid-template-columns: auto;
   }
 
-  
+
 }
